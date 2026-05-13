@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #081229;
+    color: white;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+/* HOME */
+
+.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px;
+}
+
+.home-text {
+    width: 40%;
+}
+
+.home-text h1 {
+    font-size: 60px;
+    color: #2bbcff;
+}
+
+.home-text button {
+    padding: 10px 20px;
+    margin: 10px;
+    background: #2bbcff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.profile {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #2bbcff;
+    box-shadow: 0 0 30px #2bbcff;
+}
+
+/* ABOUT */
+
+#about {
+    text-align: center;
+    padding: 80px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.box {
+    background: #13203b;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+/* PROJECTS */
+
+#projects {
+    text-align: center;
+    padding: 80px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-card {
+    background: #13203b;
+    padding: 25px;
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* CONTACT */
+
+#contact {
+    text-align: center;
+    padding: 60px;
+}
+
+.socials a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+}
+
+/* DARK MODE */
+
+.dark {
+    background: white;
+    color: black;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px) {
+
+    .home {
+        flex-direction: column;
+    }
+
+    .about-container,
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
